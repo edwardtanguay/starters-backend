@@ -10,5 +10,6 @@ export interface IRawStarter {
 export interface IStarter extends IRawStarter {
 	imageUrl: string;
 	features: string[];
+	readmeText: string;
 }
 

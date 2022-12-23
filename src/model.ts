@@ -26,6 +26,10 @@ a, h1 {
 	`;
 }
 
+const createReadmeText = (rawStarter: IRawStarter) => {
+	return 'nnn';
+}
+
 export const getStarters = (): IStarter[] => {
 	const rawStarters: IRawStarter[] = db.data.starters;
 	const _starters: IStarter[] = [];
@@ -33,7 +37,8 @@ export const getStarters = (): IStarter[] => {
 		const _starter:IStarter = {
 			...rawStarter,
 			imageUrl: `${fullBackendUrl}/images/starters/${rawStarter.idCode}.png`,
-			features: rawStarter.featureList.split(';').map(m => m.trim())
+			features: rawStarter.featureList.split(';').map(m => m.trim()),
+			readmeText: createReadmeText(rawStarter) 
 		};
 		_starters.push(_starter);
 	})
