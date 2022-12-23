@@ -9,3 +9,9 @@ The backend to starters.tanguay.eu which offers templates and mini-frameworks to
 ```yaml
 PORT = 3502
 ```
+
+## start
+
+- `npm i` (installs node_modules)
+- `npm run dev` (starts the Vite server)
+- click on URL shown to see web site in browser
