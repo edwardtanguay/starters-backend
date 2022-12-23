@@ -32,7 +32,8 @@ export const getStarters = (): IStarter[] => {
 	rawStarters.forEach(rawStarter => {
 		const _starter:IStarter = {
 			...rawStarter,
-			imageUrl: `${fullBackendUrl}/images/starters/${rawStarter.idCode}.png`  
+			imageUrl: `${fullBackendUrl}/images/starters/${rawStarter.idCode}.png`,
+			features: rawStarter.featureList.split(';').map(m => m.trim())
 		};
 		_starters.push(_starter);
 	})

@@ -3,11 +3,12 @@ export interface IRawStarter {
 	idCode: string;
 	title: string;
 	description: string;
-	features: string;
+	featureList: string;
 	githubUrl: string;
 }
 
 export interface IStarter extends IRawStarter {
 	imageUrl: string;
+	features: string[];
 }
 
