@@ -1,14 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import * as model from './model.js';
-import dotenv from 'dotenv';
+import path from 'path';
+import {port} from './config.js';
 
-dotenv.config();
+const __dirname = path.resolve(path.dirname(''));
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-const port = process.env.PORT;
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req: express.Request, res: express.Response) => {
 	res.send(model.getApiInstructionsHtml());

@@ -5,14 +5,16 @@
       "idCode": "darkViteSimple",
       "title": "Dark Vite",
       "description": "Simple one-page React site created with Vite that has Typescript and Sass installed",
-      "characteristics": "Vite; one-page; dark layout; TypeScript; Sass"
+      "features": "Vite; one-page; dark layout; TypeScript; Sass",
+      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark"
     },
     {
       "id": 2,
       "idCode": "darkViteSimpleMenu",
       "title": "Dark Vite Menu",
       "description": "Simple one-page React site created with Vite that has Typescript and Sass installed, and with React Router and a CLI that enables you to easily create pages",
-      "characteristics": "Vite; React Router menu; dark layout; TypeScript; Sass; CLI to easily create pages"
+      "features": "Vite; React Router menu; dark layout; TypeScript; Sass; CLI to easily create pages",
+      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu"
     }
   ]
 }

@@ -1,7 +1,13 @@
-export interface IStarter {
+export interface IRawStarter {
 	id: number;
 	idCode: string;
 	title: string;
 	description: string;
-	characteristics: string;
+	features: string;
+	githubUrl: string;
 }
+
+export interface IStarter extends IRawStarter {
+	imageUrl: string;
+}
+

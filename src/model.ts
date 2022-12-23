@@ -1,8 +1,9 @@
-import { IStarter} from './interfaces.js';
+import { IStarter, IRawStarter } from './interfaces.js';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
+import {fullBackendUrl} from './config.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dbFile = join(__dirname, `../src/data/db.json`);
@@ -26,6 +27,14 @@ a, h1 {
 }
 
 export const getStarters = (): IStarter[] => {
-	const _starters: IStarter[] = db.data.starters;
+	const rawStarters: IRawStarter[] = db.data.starters;
+	const _starters: IStarter[] = [];
+	rawStarters.forEach(rawStarter => {
+		const _starter:IStarter = {
+			...rawStarter,
+			imageUrl: `${fullBackendUrl}/images/starters/${rawStarter.idCode}.png`  
+		};
+		_starters.push(_starter);
+	})
 	return _starters;
 }
