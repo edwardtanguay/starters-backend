@@ -3,7 +3,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
-import {fullBackendUrl} from './config.js';
+import { fullBackendUrl } from './config.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dbFile = join(__dirname, `../src/data/db.json`);
@@ -27,18 +27,24 @@ a, h1 {
 }
 
 const createReadmeText = (rawStarter: IRawStarter) => {
-	return 'nnn';
+	return `
+# ${rawStarter.title}
+
+${rawStarter.description}
+
+nnn
+	`.trim();
 }
 
 export const getStarters = (): IStarter[] => {
 	const rawStarters: IRawStarter[] = db.data.starters;
 	const _starters: IStarter[] = [];
 	rawStarters.forEach(rawStarter => {
-		const _starter:IStarter = {
+		const _starter: IStarter = {
 			...rawStarter,
 			imageUrl: `${fullBackendUrl}/images/starters/${rawStarter.idCode}.png`,
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
-			readmeText: createReadmeText(rawStarter) 
+			readmeText: createReadmeText(rawStarter)
 		};
 		_starters.push(_starter);
 	})
