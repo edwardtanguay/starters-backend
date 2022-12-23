@@ -6,7 +6,7 @@ The backend to starters.tanguay.eu which offers templates and mini-frameworks to
 
 - create an `.env` file with a desired port number on which your backend will run
 
-```yaml
+```text
 PORT = 3502
 ```
 
@@ -14,4 +14,4 @@ PORT = 3502
 
 - `npm i` (installs node_modules)
 - `npm run dev` (starts the Vite server)
-- click on URL shown to use web site in browser
+- click on URL shown to see API doc page in the browser
