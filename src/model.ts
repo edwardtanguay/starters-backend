@@ -3,7 +3,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
-import { fullBackendUrl } from './config.js';
+import { backendUrl } from './config.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dbFile = join(__dirname, `../src/data/db.json`);
@@ -42,7 +42,7 @@ export const getStarters = (): IStarter[] => {
 	rawStarters.forEach(rawStarter => {
 		const _starter: IStarter = {
 			...rawStarter,
-			imageUrl: `${fullBackendUrl}/images/starters/${rawStarter.idCode}.png`,
+			imageUrl: `${backendUrl}/images/starters/${rawStarter.idCode}.png`,
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
 			readmeText: createReadmeText(rawStarter)
 		};
