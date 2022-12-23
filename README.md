@@ -13,5 +13,5 @@ PORT = 3502
 ## start
 
 - `npm i` (installs node_modules)
-- `npm run dev` (starts the Vite server)
+- `npm run dev` (starts the Node server)
 - click on URL shown to see API doc page in the browser
