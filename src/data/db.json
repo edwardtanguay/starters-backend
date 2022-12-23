@@ -6,7 +6,8 @@
       "title": "Dark Vite",
       "description": "Simple one-page React site created with Vite that has Typescript and Sass installed",
       "featureList": "built with **Vite**; **one-page** without any menu; dark layout; TypeScript; one **Sass** file (`index.css` is deleted); *good for simple sites and basic React howto examples*",
-      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark"
+      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark",
+      "installList": "download zip; copy all files to new directory, e.g. `/home/yourname/projects/site001`; open VSCode in that directory (`code .`); `npm i`; `npm run dev`"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "title": "Dark Vite Menu",
       "description": "Simple one-page React site created with Vite that has Typescript and Sass installed, and with React Router and a CLI that enables you to easily create pages",
       "featureList": "built with **Vite**; **React Router** menu; dark layout; TypeScript; one **Sass** file (`index.css` is deleted); **CLI** to easily create pages (`npm run cp Info` creates info page); *good for simple React sites that require a menu*",
-      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu"
+      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu",
+      "installList": "download zip; copy all files to new directory, e.g. `/home/yourname/projects/site001`;open VSCode in that directory (`code .`);`npm i`; `npm run dev`"
     }
   ]
 }
