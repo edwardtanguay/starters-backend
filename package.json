@@ -8,7 +8,7 @@
 		"dev": "npm run build && nodemon",
 		"setup": "pm2 start --name starters-backend npm -- start",
 		"start": "node dist/server.js",
-		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart getajob007-backend",
+		"deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart starters-backend",
 		"build": "tsc"
 	},
 	"nodemonConfig": {
