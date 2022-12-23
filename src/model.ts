@@ -3,7 +3,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
-import { backendUrl } from './config.js';
+import { backendUrl, onlineBackendUrl } from './config.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dbFile = join(__dirname, `../src/data/db.json`);
@@ -32,7 +32,16 @@ const createReadmeText = (rawStarter: IRawStarter) => {
 
 ${rawStarter.description}
 
-nnn
+![grafik](${onlineBackendUrl})
+
+## features
+
+${rawStarter.featureList.split(';').map(m => `- ${m.trim()}\n`).join('')}
+
+## install
+
+- nnn
+- nnn
 	`.trim();
 }
 
