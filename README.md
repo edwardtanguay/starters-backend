@@ -14,4 +14,4 @@ PORT = 3502
 
 - `npm i` (installs node_modules)
 - `npm run dev` (starts the Vite server)
-- click on URL shown to see web site in browser
+- click on URL shown to use web site in browser
