@@ -5,11 +5,13 @@ export interface IRawStarter {
 	description: string;
 	featureList: string;
 	githubUrl: string;
+	installList: string;
 }
 
 export interface IStarter extends IRawStarter {
 	imageUrl: string;
 	features: string[];
 	readmeText: string;
+	installLines: string[];
 }
 

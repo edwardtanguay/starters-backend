@@ -26,13 +26,17 @@ a, h1 {
 	`;
 }
 
+const getOnlineImageUrl = (baseUrl: string, idCode: string) => {
+	return `${baseUrl}/images/starters/${idCode}.png`;	
+}
+
 const createReadmeText = (rawStarter: IRawStarter) => {
 	return `
 # ${rawStarter.title}
 
 ${rawStarter.description}
 
-![grafik](${onlineBackendUrl})
+![grafik](${getOnlineImageUrl(onlineBackendUrl, rawStarter.idCode)})
 
 ## features
 
@@ -40,8 +44,11 @@ ${rawStarter.featureList.split(';').map(m => `- ${m.trim()}\n`).join('')}
 
 ## install
 
-- nnn
-- nnn
+${rawStarter.installList.split(';').map(m => `- ${m.trim()}\n`).join('')}
+
+## more starters, templates and frameworks
+
+https://starter.tanguay.eu
 	`.trim();
 }
 
@@ -51,9 +58,11 @@ export const getStarters = (): IStarter[] => {
 	rawStarters.forEach(rawStarter => {
 		const _starter: IStarter = {
 			...rawStarter,
-			imageUrl: `${backendUrl}/images/starters/${rawStarter.idCode}.png`,
+			imageUrl: `${getOnlineImageUrl(backendUrl, rawStarter.idCode)}`,
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
-			readmeText: createReadmeText(rawStarter)
+			readmeText: createReadmeText(rawStarter),
+			installLines: rawStarter.installList.split(';').map(m => m.trim()),
+
 		};
 		_starters.push(_starter);
 	})
