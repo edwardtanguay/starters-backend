@@ -14,7 +14,6 @@ export interface IStarter extends IRawStarter {
 	imageUrl: string;
 	features: string[];
 	readmeText: string;
-	readmeText2: string;
 	isFullStack: boolean;
 	animationUrl: string;
 }

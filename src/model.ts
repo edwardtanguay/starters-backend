@@ -81,17 +81,10 @@ export const getStarters = (): IStarter[] => {
 			...rawStarter,
 			imageUrl: `${getOnlineImageUrl(backendUrl, rawStarter.idCode)}`,
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
-			readmeText: '',
-			readmeText2: '',
+			readmeText: getReadmeTextBackend(rawStarter),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter)
 		};
-		if (_starter.isFullStack) {
-			_starter.readmeText = getReadmeTextBackend(rawStarter)
-			_starter.readmeText2 = getReadmeTextFrontend(rawStarter)
-		} else {
-			_starter.readmeText = getReadmeText(rawStarter);
-		}
 		_starters.push(_starter);
 	})
 	return _starters;

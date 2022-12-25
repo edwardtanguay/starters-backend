@@ -9,8 +9,6 @@
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark",
       "githubUrl2": "",
       "installText": "- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
-      "installList": "download zip; copy all files to new directory, e.g. `/home/yourname/projects/site001`; open VSCode in that directory (`code .`); `npm i`; `npm run dev`",
-      "installList2": "",
       "demoUrl": ""
     },
     {
@@ -22,21 +20,17 @@
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu",
       "githubUrl2": "",
       "installText": "- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
-      "installList": "download zip; copy all files to new directory, e.g. `/home/yourname/projects/site001`;open VSCode in that directory (`code .`);`npm i`; `npm run dev`",
-      "installList2": "",
       "demoUrl": ""
     },
     {
       "id": 3,
       "idCode": "frontBackMernCrudLowdbPin",
       "title": "Frontend/Backend MERN CRUD app with Lowdb and PIN authentication",
-      "description": "This is a fullstack MERN frontend/backend example app which has all the moving parts for you to deploy an application online to e.g. Hetzner which allows users who know the admin PIN to edit, delete and add new items online. This is a good basis to study, learn and use if you have React/Node/Express skills but not yet database or auth security skills. After you get the backend and frontend installed and working locally, you will have to replace the content with your own content, i.e. it is more of an example app than a blank template, but it has everything you need to publish an online website in which users can identify themselves and change content online.",
+      "description": "This is a fullstack MERN frontend/backend example app which has all the moving parts for you to deploy an application online to e.g. Hetzner which allows users who know the admin PIN to edit, delete and add new items online. This is a good basis to study, learn and use if you have React/Node/Express skills but not yet database or auth security skills. It has everything you need to publish an online website in which users can identify themselves and change content online. Note that if you want to build a job-application management app, this is a useful basis which can be used as is. Otherwise you will have to replace the content with your own.",
       "featureList": "fullstack app (with simple authentication and lowdb database); Vite/React frontend with Sass, TypeScript and ES6 modules; Node/Express backend with TypeScript and ES6 modules; Lowdb used as database (one JSON file in backend); simple authentication solved with PIN which is an environment variable in the backend, i.e. all POST/PATCH/DELETE backend routes are protected",
       "githubUrl": "https://github.com/edwardtanguay/getajob007-frontend",
       "githubUrl2": "https://github.com/edwardtanguay/getajob007-backend",
-      "installText": "",
-      "installList": "todo frontend 111; todo frontend 222",
-      "installList2": "todo backend 111; todo backend 222",
+      "installText": "## install\n\n- go to your projects directory\n- create a directory called `getajob`\n\n## install backend\n\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-backend.git`\n- `npm i`\n- create **.env** file\n\n```text\nPORT = 3001\nPIN = 1234\n```\n\n- `npm run dev`\n\n## install frontend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-frontend.git`\n- `npm i`\n- create **.env** file\n\n```text\nVITE_BACKEND_URL = http://localhost:3001\n```\n\n- `npm run dev`",
       "demoUrl": "https://getajob007.tanguay.eu"
     }
   ]
