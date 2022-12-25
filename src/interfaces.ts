@@ -8,6 +8,8 @@ export interface IRawStarter {
 	githubUrl2: string;
 	installText: string;
 	installText2: string;
+	demoUrl: string;
+	updowngradeList: string;
 }
 
 export interface IStarter extends IRawStarter {
@@ -16,5 +18,11 @@ export interface IStarter extends IRawStarter {
 	readmeText: string;
 	isFullStack: boolean;
 	animationUrl: string;
+	updowngradeItems: IUpdowngradeItem[];
 }
+
+export interface IUpdowngradeItem {
+	text: string;
+	idCode: string;
+};
 

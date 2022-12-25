@@ -1,4 +1,4 @@
-import { IStarter, IRawStarter } from './interfaces.js';
+import { IStarter, IRawStarter, IUpdowngradeItem } from './interfaces.js';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
@@ -73,6 +73,25 @@ const getAnimationUrl = (rawStarter: IRawStarter) => {
 	}
 }
 
+const getUpdowngradeItems = (rawStarter: IRawStarter) => {
+	if (rawStarter.updowngradeList.trim() !== '') {
+		const updowngradeItems: IUpdowngradeItem[] = [];
+		// "remove dark color|plainSite; add React Router menu|darkViteSimpleMenu"
+		const itemLines = rawStarter.updowngradeList.split(';').map(m => m.trim());
+		itemLines.forEach(itemLine => {
+			const parts = itemLine.split('|').map(m => m.trim());
+			const updowngradeItem: IUpdowngradeItem = {
+				text: parts[0],
+				idCode: parts[1]
+			}
+			updowngradeItems.push(updowngradeItem);
+		});
+		return updowngradeItems;
+	} else {
+		return [];
+	}
+}
+
 export const getStarters = (): IStarter[] => {
 	const rawStarters: IRawStarter[] = db.data.starters;
 	const _starters: IStarter[] = [];
@@ -83,7 +102,8 @@ export const getStarters = (): IStarter[] => {
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter),
-			readmeText: getReadmeText(rawStarter)
+			readmeText: getReadmeText(rawStarter),
+			updowngradeItems: getUpdowngradeItems(rawStarter)
 		};
 		_starters.push(_starter);
 	})

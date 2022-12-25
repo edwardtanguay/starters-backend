@@ -4,23 +4,25 @@
       "id": 1,
       "idCode": "darkViteSimple",
       "title": "Dark Vite",
-      "description": "Simple one-page React site created with Vite that has Typescript and Sass installed",
+      "description": "This is a simple one-page React site created with Vite that has Typescript and Sass installed.",
       "featureList": "built with **Vite**; **one-page** without any menu; dark layout; TypeScript; one **Sass** file (`index.css` is deleted); *good for simple sites and basic React howto examples*",
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark",
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
-      "demoUrl": ""
+      "demoUrl": "",
+      "updowngradeList": "add React Router menu|darkViteSimpleMenu"
     },
     {
       "id": 2,
       "idCode": "darkViteSimpleMenu",
       "title": "Dark Vite Menu",
-      "description": "Simple one-page React site created with Vite that has Typescript and Sass installed, and with React Router and a CLI that enables you to easily create pages",
+      "description": "This is a simple one-page React site created with Vite that has Typescript and Sass installed, and with React Router and a CLI that enables you to easily create pages.",
       "featureList": "built with **Vite**; **React Router** menu; dark layout; TypeScript; one **Sass** file (`index.css` is deleted); **CLI** to easily create pages (`npm run cp Info` creates info page); *good for simple React sites that require a menu*",
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu",
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
-      "demoUrl": ""
+      "demoUrl": "",
+      "updowngradeList": ""
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "githubUrl": "https://github.com/edwardtanguay/getajob007-frontend",
       "githubUrl2": "https://github.com/edwardtanguay/getajob007-backend",
       "installText": "## install\n\n- go to your projects directory\n- create a directory called `getajob`\n\n## install backend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-backend.git`\n- `npm i`\n- create **.env** file\n\n```text\nPORT = 3001\nPIN = 1234\n```\n\n- `npm run dev`\n\n## install frontend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-frontend.git`\n- `npm i`\n- create **.env** file\n\n```text\nVITE_BACKEND_URL = http://localhost:3001\n```\n\n- `npm run dev`",
-      "demoUrl": "https://getajob007.tanguay.eu"
+      "demoUrl": "https://getajob007.tanguay.eu",
+      "updowngradeList": ""
     }
   ]
 }
