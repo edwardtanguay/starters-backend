@@ -73,6 +73,7 @@ export const getStarters = (): IStarter[] => {
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
 			readmeText: createReadmeText(rawStarter),
 			installLines: rawStarter.installList.split(';').map(m => m.trim()),
+			installLines2: rawStarter.installList2.split(';').map(m => m.trim()),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter)
 		};
