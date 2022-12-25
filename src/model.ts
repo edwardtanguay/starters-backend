@@ -27,8 +27,8 @@ a, h1 {
 	`;
 }
 
-const getOnlineImageUrl = (baseUrl: string, idCode: string) => {
-	return `${baseUrl}/images/starters/${idCode}.png`;	
+const getOnlineImageUrl = (baseUrl: string, idCode: string, extension: string = 'png') => {
+	return `${baseUrl}/images/starters/${idCode}.${extension}`;
 }
 
 const createReadmeText = (rawStarter: IRawStarter) => {
@@ -53,8 +53,14 @@ https://starter.tanguay.eu
 	`.trim();
 }
 
-const getHasAnimation = (rawStarter: IRawStarter) => {
-	return tools.fileExists(`public/images/starters/${rawStarter.idCode}.gif`);
+const getAnimationUrl = (rawStarter: IRawStarter) => {
+	const pathAndFileName = `public/images/starters/${rawStarter.idCode}.gif`;
+	const fileExists = tools.fileExists(pathAndFileName);
+	if (fileExists) {
+		return getOnlineImageUrl(backendUrl, rawStarter.idCode, 'gif');
+	} else {
+		return '';
+	}
 }
 
 export const getStarters = (): IStarter[] => {
@@ -68,7 +74,7 @@ export const getStarters = (): IStarter[] => {
 			readmeText: createReadmeText(rawStarter),
 			installLines: rawStarter.installList.split(';').map(m => m.trim()),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
-			hasAnimation: getHasAnimation(rawStarter),
+			animationUrl: getAnimationUrl(rawStarter)
 		};
 		_starters.push(_starter);
 	})
