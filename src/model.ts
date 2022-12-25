@@ -35,16 +35,16 @@ const getAnimationText = (animationUrl: string) => {
 	if (animationUrl === '') {
 		return '';
 	} else {
-		return `
-## how the site works
+		const text = `
+		## how the site works
 
 ![grafik](${animationUrl})
-
 `;
+		return text.trim();
 	}
 }
 
-const getReadmeText = (rawStarter: IRawStarter, animationText: string) => {
+const getReadmeText = (rawStarter: IRawStarter) => {
 	return `
 # ${rawStarter.title}
 
@@ -56,7 +56,6 @@ ${rawStarter.description}
 
 ${rawStarter.featureList.split(';').map(m => `- ${m.trim()}\n`).join('')}
 ${rawStarter.installText}
-${animationText}
 
 ## more starters, templates and frameworks
 
@@ -84,9 +83,8 @@ export const getStarters = (): IStarter[] => {
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter),
-			readmeText: ''
+			readmeText: getReadmeText(rawStarter)
 		};
-		_starter.readmeText = getReadmeText(rawStarter, getAnimationText(_starter.animationUrl));
 		_starters.push(_starter);
 	})
 	return _starters;
