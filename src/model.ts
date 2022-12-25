@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
 import { backendUrl, onlineBackendUrl } from './config.js';
+import * as tools from './tools.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dbFile = join(__dirname, `../src/data/db.json`);
@@ -52,6 +53,10 @@ https://starter.tanguay.eu
 	`.trim();
 }
 
+const getHasAnimation = (rawStarter: IRawStarter) => {
+	return tools.fileExists(`public/images/starters/${rawStarter.idCode}.gif`);
+}
+
 export const getStarters = (): IStarter[] => {
 	const rawStarters: IRawStarter[] = db.data.starters;
 	const _starters: IStarter[] = [];
@@ -62,7 +67,8 @@ export const getStarters = (): IStarter[] => {
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
 			readmeText: createReadmeText(rawStarter),
 			installLines: rawStarter.installList.split(';').map(m => m.trim()),
-			isFullStack: rawStarter.githubUrl2.trim() !== ''
+			isFullStack: rawStarter.githubUrl2.trim() !== '',
+			hasAnimation: getHasAnimation(rawStarter),
 		};
 		_starters.push(_starter);
 	})

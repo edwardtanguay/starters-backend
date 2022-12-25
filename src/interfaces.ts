@@ -16,5 +16,6 @@ export interface IStarter extends IRawStarter {
 	readmeText: string;
 	installLines: string[];
 	isFullStack: boolean;
+	hasAnimation: boolean;
 }
 
