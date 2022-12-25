@@ -6,14 +6,14 @@ import * as tools from './tools.js';
 const __dirname = path.resolve(path.dirname(''));
 
 const absolutifyPathAndFileName = (pathAndFileName: string) => {
-	if (tools.operationSystemIsLinux()) {
+	if (tools.operatingSystemIsLinux()) {
 		return __dirname + '/' + pathAndFileName;
 	} else {
 		return __dirname + '\\' + pathAndFileName.replace(/\//g, '\\');
 	}
 }
 
-export const operationSystemIsLinux = () => {
+export const operatingSystemIsLinux = () => {
 	return os.platform() === 'linux';
 }
 
