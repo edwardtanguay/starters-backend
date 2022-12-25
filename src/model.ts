@@ -31,7 +31,20 @@ const getOnlineImageUrl = (baseUrl: string, idCode: string, extension: string = 
 	return `${baseUrl}/images/starters/${idCode}.${extension}`;
 }
 
-const getReadmeText = (rawStarter: IRawStarter) => {
+const getAnimationText = (animationUrl: string) => {
+	if (animationUrl === '') {
+		return '';
+	} else {
+		return `
+## how the site works
+
+![grafik](${animationUrl})
+
+`;
+	}
+}
+
+const getReadmeText = (rawStarter: IRawStarter, animationText: string) => {
 	return `
 # ${rawStarter.title}
 
@@ -43,6 +56,7 @@ ${rawStarter.description}
 
 ${rawStarter.featureList.split(';').map(m => `- ${m.trim()}\n`).join('')}
 ${rawStarter.installText}
+${animationText}
 
 ## more starters, templates and frameworks
 
@@ -68,10 +82,11 @@ export const getStarters = (): IStarter[] => {
 			...rawStarter,
 			imageUrl: `${getOnlineImageUrl(backendUrl, rawStarter.idCode)}`,
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
-			readmeText: getReadmeText(rawStarter),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
-			animationUrl: getAnimationUrl(rawStarter)
+			animationUrl: getAnimationUrl(rawStarter),
+			readmeText: ''
 		};
+		_starter.readmeText = getReadmeText(rawStarter, getAnimationText(_starter.animationUrl));
 		_starters.push(_starter);
 	})
 	return _starters;
