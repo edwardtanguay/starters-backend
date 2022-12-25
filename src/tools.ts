@@ -33,8 +33,5 @@ export const getNextId = (items: any[]) => {
 
 export const fileExists = (pathAndFileName: string) => {
 	const absolutePathAndFileName = absolutifyPathAndFileName(pathAndFileName);
-
-	console.log(absolutePathAndFileName);
-
 	return fs.existsSync(absolutePathAndFileName);
 }

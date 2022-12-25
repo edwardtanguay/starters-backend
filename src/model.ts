@@ -45,11 +45,11 @@ ${rawStarter.featureList.split(';').map(m => `- ${m.trim()}\n`).join('')}
 
 ## install
 
-${rawStarter.installList.split(';').map(m => `- ${m.trim()}\n`).join('')}
+${rawStarter.installText}
 
 ## more starters, templates and frameworks
 
-https://starter.tanguay.eu
+https://starters.tanguay.eu
 	`.trim();
 }
 

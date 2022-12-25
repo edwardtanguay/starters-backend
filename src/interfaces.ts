@@ -6,6 +6,7 @@ export interface IRawStarter {
 	featureList: string;
 	githubUrl: string;
 	githubUrl2: string;
+	installText: string;
 	installList: string;
 	installList2: string;
 }
