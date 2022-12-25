@@ -8,6 +8,7 @@ The backend to starters.tanguay.eu which offers templates and mini-frameworks to
 
 ```text
 PORT = 3502
+BACKEND_URL = http://localhost:3502
 ```
 
 ## start
