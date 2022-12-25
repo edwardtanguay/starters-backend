@@ -31,7 +31,15 @@ const getOnlineImageUrl = (baseUrl: string, idCode: string, extension: string = 
 	return `${baseUrl}/images/starters/${idCode}.${extension}`;
 }
 
-const createReadmeText = (rawStarter: IRawStarter) => {
+const getReadmeTextBackend = (rawStarter: IRawStarter) => {
+	return 'backendreadme';
+}
+
+const getReadmeTextFrontend = (rawStarter: IRawStarter) => {
+	return 'frontendreadme';
+}
+
+const getReadmeText = (rawStarter: IRawStarter) => {
 	return `
 # ${rawStarter.title}
 
@@ -56,7 +64,7 @@ https://starters.tanguay.eu
 const getAnimationUrl = (rawStarter: IRawStarter) => {
 	const pathAndFileName = `public/images/starters/${rawStarter.idCode}.gif`;
 	console.log(pathAndFileName);
-	
+
 	const fileExists = tools.fileExists(pathAndFileName);
 	if (fileExists) {
 		return getOnlineImageUrl(backendUrl, rawStarter.idCode, 'gif');
@@ -73,12 +81,17 @@ export const getStarters = (): IStarter[] => {
 			...rawStarter,
 			imageUrl: `${getOnlineImageUrl(backendUrl, rawStarter.idCode)}`,
 			features: rawStarter.featureList.split(';').map(m => m.trim()),
-			readmeText: createReadmeText(rawStarter),
-			installLines: rawStarter.installList.split(';').map(m => m.trim()),
-			installLines2: rawStarter.installList2.split(';').map(m => m.trim()),
+			readmeText: '',
+			readmeText2: '',
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter)
 		};
+		if (_starter.isFullStack) {
+			_starter.readmeText = getReadmeTextBackend(rawStarter)
+			_starter.readmeText2 = getReadmeTextFrontend(rawStarter)
+		} else {
+			_starter.readmeText = getReadmeText(rawStarter);
+		}
 		_starters.push(_starter);
 	})
 	return _starters;

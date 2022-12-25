@@ -7,16 +7,14 @@ export interface IRawStarter {
 	githubUrl: string;
 	githubUrl2: string;
 	installText: string;
-	installList: string;
-	installList2: string;
+	installText2: string;
 }
 
 export interface IStarter extends IRawStarter {
 	imageUrl: string;
 	features: string[];
 	readmeText: string;
-	installLines: string[];
-	installLines2: string[];
+	readmeText2: string;
 	isFullStack: boolean;
 	animationUrl: string;
 }
