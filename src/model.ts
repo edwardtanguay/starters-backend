@@ -55,6 +55,8 @@ https://starter.tanguay.eu
 
 const getAnimationUrl = (rawStarter: IRawStarter) => {
 	const pathAndFileName = `public/images/starters/${rawStarter.idCode}.gif`;
+	console.log(pathAndFileName);
+	
 	const fileExists = tools.fileExists(pathAndFileName);
 	if (fileExists) {
 		return getOnlineImageUrl(backendUrl, rawStarter.idCode, 'gif');
