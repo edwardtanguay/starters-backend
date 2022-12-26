@@ -33,7 +33,7 @@
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu-usecontext",
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
-      "demoUrl": "",
+      "demoUrl": "https://blank-vite-dark-menu-usecontext.vercel.app",
       "updowngradeList": "remove useContext|darkViteSimpleMenu"
     },
     {
