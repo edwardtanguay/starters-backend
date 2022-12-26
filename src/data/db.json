@@ -10,7 +10,8 @@
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
       "demoUrl": "",
-      "updowngradeList": "add React Router menu|darkViteSimpleMenu"
+      "updowngradeList": "add React Router menu|darkViteSimpleMenu",
+      "learningMaterialList": ""
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
       "demoUrl": "",
-      "updowngradeList": "remove React Router menu|darkViteSimple;add useContext|blankViteDarkMenuUsecontext"
+      "updowngradeList": "remove React Router menu|darkViteSimple;add useContext|blankViteDarkMenuUsecontext",
+      "learningMaterialList": ""
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
       "demoUrl": "https://blank-vite-dark-menu-usecontext.vercel.app",
-      "updowngradeList": "remove useContext|darkViteSimpleMenu"
+      "updowngradeList": "remove useContext|darkViteSimpleMenu",
+      "learningMaterialList": "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636"
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "githubUrl2": "https://github.com/edwardtanguay/getajob007-backend",
       "installText": "## install\n\n- go to your projects directory\n- create a directory called `getajob`\n\n## install backend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-backend.git`\n- `npm i`\n- create **.env** file\n\n```text\nPORT = 3001\nPIN = 1234\n```\n\n- `npm run dev`\n\n## install frontend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-frontend.git`\n- `npm i`\n- create **.env** file\n\n```text\nVITE_BACKEND_URL = http://localhost:3001\n```\n\n- `npm run dev`",
       "demoUrl": "https://getajob007.tanguay.eu",
-      "updowngradeList": ""
+      "updowngradeList": "",
+      "learningMaterialList": ""
     }
   ]
 }

@@ -1,4 +1,4 @@
-import { IStarter, IRawStarter, IUpdowngradeItem } from './interfaces.js';
+import { IStarter, IRawStarter, IUpdowngradeItem, ILearningMaterialItem } from './interfaces.js';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
@@ -92,6 +92,25 @@ const getUpdowngradeItems = (rawStarter: IRawStarter) => {
 	}
 }
 
+const getLearningMaterialItems = (rawStarter: IRawStarter) => {
+	if (rawStarter.learningMaterialList.trim() !== '') {
+		const learningMaterialItems: ILearningMaterialItem[] = [];
+		// "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636"
+		const itemLines = rawStarter.learningMaterialList.split(';').map(m => m.trim());
+		itemLines.forEach(itemLine => {
+			const parts = itemLine.split('|').map(m => m.trim());
+			const learningMaterialItem: ILearningMaterialItem = {
+				title: parts[0],
+				url: parts[1]
+			}
+			learningMaterialItems.push(learningMaterialItem);
+		});
+		return learningMaterialItems;
+	} else {
+		return [];
+	}
+}
+
 export const getStarters = (): IStarter[] => {
 	const rawStarters: IRawStarter[] = db.data.starters;
 	const _starters: IStarter[] = [];
@@ -103,7 +122,8 @@ export const getStarters = (): IStarter[] => {
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter),
 			readmeText: getReadmeText(rawStarter),
-			updowngradeItems: getUpdowngradeItems(rawStarter)
+			updowngradeItems: getUpdowngradeItems(rawStarter),
+			learningMaterialItems: getLearningMaterialItems(rawStarter)
 		};
 		_starters.push(_starter);
 	})

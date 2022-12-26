@@ -10,6 +10,7 @@ export interface IRawStarter {
 	installText2: string;
 	demoUrl: string;
 	updowngradeList: string;
+	learningMaterialList: string;
 }
 
 export interface IStarter extends IRawStarter {
@@ -19,6 +20,7 @@ export interface IStarter extends IRawStarter {
 	isFullStack: boolean;
 	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
+	learningMaterialItems: ILearningMaterialItem[];
 }
 
 export interface IUpdowngradeItem {
@@ -26,3 +28,7 @@ export interface IUpdowngradeItem {
 	idCode: string;
 };
 
+export interface ILearningMaterialItem {
+	title: string;
+	url: string;
+}
