@@ -10,7 +10,7 @@
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
       "demoUrl": "",
-      "updowngradeList": "add React Router menu|darkViteSimpleMenu"
+      "updowngradeList": "with React Router menu|darkViteSimpleMenu"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
       "demoUrl": "",
-      "updowngradeList": "remove React Router menu|darkViteSimple"
+      "updowngradeList": "without React Router menu|darkViteSimple"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "githubUrl2": "",
       "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
       "demoUrl": "",
-      "updowngradeList": "remove useContext|darkViteSimpleMenu"
+      "updowngradeList": "without useContext|darkViteSimpleMenu"
     },
     {
       "id": 4,
