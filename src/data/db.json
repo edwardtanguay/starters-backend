@@ -26,6 +26,18 @@
     },
     {
       "id": 3,
+      "idCode": "blankViteDarkMenuUsecontext",
+      "title": "Dark Vite Menu with useContext",
+      "description": "This is a simple one-page React site created with Vite that has Typescript and Sass installed, and with React Router and a CLI that enables you to easily create pages. It also has useContext implemented with an example of loading both static and API data in useContext and using these state variables on two separate pages.",
+      "featureList": "built with **Vite**; **React Router** menu; dark layout; TypeScript; one **Sass** file (`index.css` is deleted); **CLI** to easily create pages (`npm run cp Info` creates info page); *good for any React project since state management such as useContext is useful in any site beyond the simplest demo sites*",
+      "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu-usecontext",
+      "githubUrl2": "",
+      "installText": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
+      "demoUrl": "",
+      "updowngradeList": "remove useContext|darkViteSimpleMenu"
+    },
+    {
+      "id": 4,
       "idCode": "frontBackMernCrudLowdbPin",
       "title": "Frontend/Backend MERN CRUD app with Lowdb and PIN authentication",
       "description": "This is a fullstack MERN frontend/backend example app which has all the moving parts for you to deploy an application online to e.g. Hetzner which allows users who know the admin PIN to edit, delete and add new items online. This is a good basis to study, learn and use if you have React/Node/Express skills but not yet database or auth security skills. It has everything you need to publish an online website in which users can identify themselves and change content online. Note that if you want to build a job-application management app, this is a useful basis which can be used as is. Otherwise you will have to replace the content with your own.",
