@@ -111,6 +111,16 @@ const getLearningMaterialItems = (rawStarter: IRawStarter) => {
 	}
 }
 
+const getTodoItems = (rawStarter: IRawStarter) => {
+	if (rawStarter.todoList.trim() !== '') {
+		// "put class names on each page;add 404 fixes"
+		const todoItems = rawStarter.todoList.split(';').map(m => m.trim());
+		return todoItems;
+	} else {
+		return [];
+	}
+}
+
 export const getStarters = (): IStarter[] => {
 	const rawStarters: IRawStarter[] = db.data.starters;
 	const _starters: IStarter[] = [];
@@ -123,7 +133,8 @@ export const getStarters = (): IStarter[] => {
 			animationUrl: getAnimationUrl(rawStarter),
 			readmeText: getReadmeText(rawStarter),
 			updowngradeItems: getUpdowngradeItems(rawStarter),
-			learningMaterialItems: getLearningMaterialItems(rawStarter)
+			learningMaterialItems: getLearningMaterialItems(rawStarter),
+			todoItems: getTodoItems(rawStarter)
 		};
 		_starters.push(_starter);
 	})

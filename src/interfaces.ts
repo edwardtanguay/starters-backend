@@ -11,6 +11,7 @@ export interface IRawStarter {
 	demoUrl: string;
 	updowngradeList: string;
 	learningMaterialList: string;
+	todoList: string;
 }
 
 export interface IStarter extends IRawStarter {
@@ -21,6 +22,7 @@ export interface IStarter extends IRawStarter {
 	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
 	learningMaterialItems: ILearningMaterialItem[];
+	todoItems: string[];
 }
 
 export interface IUpdowngradeItem {
