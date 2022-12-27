@@ -54,7 +54,8 @@ ${rawStarter.description}
 
 ## features
 
-${rawStarter.featureList.split(';').map(m => `- ${m.trim()}\n`).join('')}
+${rawStarter.featureMarkdown}
+
 ${rawStarter.installText}
 
 ## more starters, templates and frameworks
@@ -128,7 +129,6 @@ export const getStarters = (): IStarter[] => {
 		const _starter: IStarter = {
 			...rawStarter,
 			imageUrl: `${getOnlineImageUrl(backendUrl, rawStarter.idCode)}`,
-			features: rawStarter.featureList.split(';').map(m => m.trim()),
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
 			animationUrl: getAnimationUrl(rawStarter),
 			readmeText: getReadmeText(rawStarter),

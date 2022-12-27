@@ -3,7 +3,7 @@ export interface IRawStarter {
 	idCode: string;
 	title: string;
 	description: string;
-	featureList: string;
+	featureMarkdown: string;
 	githubUrl: string;
 	githubUrl2: string;
 	installText: string;
@@ -16,7 +16,6 @@ export interface IRawStarter {
 
 export interface IStarter extends IRawStarter {
 	imageUrl: string;
-	features: string[];
 	readmeText: string;
 	isFullStack: boolean;
 	animationUrl: string;
