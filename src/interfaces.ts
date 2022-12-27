@@ -6,8 +6,7 @@ export interface IRawStarter {
 	featureMarkdown: string;
 	githubUrl: string;
 	githubUrl2: string;
-	installText: string;
-	installText2: string;
+	installMarkdown: string;
 	demoUrl: string;
 	updowngradeList: string;
 	learningMaterialList: string;

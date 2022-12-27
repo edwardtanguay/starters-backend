@@ -56,7 +56,7 @@ ${rawStarter.description}
 
 ${rawStarter.featureMarkdown}
 
-${rawStarter.installText}
+${rawStarter.installMarkdown}
 
 ## more starters, templates and frameworks
 
