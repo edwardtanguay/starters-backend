@@ -31,7 +31,7 @@
     {
       "id": 3,
       "idCode": "blankViteDarkMenuUsecontext",
-      "title": "Dark Reacth Site with Menu and useContext",
+      "title": "Dark React Site with Menu and useContext",
       "description": "This is a simple one-page React site created with Vite that has Typescript and Sass installed, and with React Router and a CLI that enables you to easily create pages. It also has useContext implemented with an example of loading both static and API data in useContext and using these state variables on two separate pages.",
       "featureMarkdown": "- built with **Vite**\n- **React Router** menu\n- dark layout\n- TypeScript\n- one **Sass** file (`index.css` is deleted)\n- **CLI** to easily create pages (`npm run cp Info` creates info page)\n- this site has **React Router 404 bug fixes** implemented for both Netlify (`public/_redirects` file) and Vercel (`vercel.json` file)\n- *good for any React project since state management such as useContext is useful in any site beyond the simplest demo sites*",
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu-usecontext",
