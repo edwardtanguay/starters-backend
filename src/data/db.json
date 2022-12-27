@@ -36,7 +36,7 @@
       "featureMarkdown": "- built with **Vite**\n- **React Router** menu\n- dark layout\n- TypeScript\n- one **Sass** file (`index.css` is deleted)\n- **CLI** to easily create pages (`npm run cp Info` creates info page)\n- this site has **React Router 404 bug fixes** implemented for both Netlify (`public/_redirects` file) and Vercel (`vercel.json` file)\n- *good for any React project since state management such as useContext is useful in any site beyond the simplest demo sites*",
       "githubUrl": "https://github.com/edwardtanguay/blank-vite-dark-menu-usecontext",
       "githubUrl2": "",
-      "installMarkdown": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
+      "installMarkdown": "## install\n\n- go to your projects directory\n- create your site directory e.g. **site001** by cloning this project \n  - `git clone git@github.com:edwardtanguay/blank-vite-dark-menu-usecontext.git site001`\n- open your newly created site in VSCode\n  - `code site001`\n- open your VSCode terminal\n- delete the connection to this repository\n  - `rm -rd .git`\n- create a new Git repository\n  - `git init -b main`\n- install node_modules\n  - `npm i`\n- start your site\n  - `npm run dev`",
       "demoUrl": "https://blank-vite-dark-menu-usecontext.vercel.app",
       "updowngradeList": "remove useContext|darkViteSimpleMenu",
       "learningMaterialList": "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636",
