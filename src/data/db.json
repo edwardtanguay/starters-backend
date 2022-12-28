@@ -38,7 +38,7 @@
       "githubUrl2": "",
       "installMarkdown": "## install\n\n- go to your projects directory\n  - e.g. `cd ~/projects`\n- in your projects directory, create your new site e.g. **site001** by cloning this project \n  - `git clone git@github.com:edwardtanguay/blank-vite-dark-menu-usecontext.git site001`\n- open your newly created site in VSCode\n  - `code site001`\n- inside VSCode, open the VSCode terminal\n  - **CTRL-`**\n- delete the connection to this repository by deleting the Git repository\n  - `rm -rf .git`\n- create a new local Git repository\n  - `git init -b main`\n- install node_modules\n  - `npm i`\n- start your site and click given link to view website\n  - `npm run dev`",
       "demoUrl": "https://blank-vite-dark-menu-usecontext.vercel.app",
-      "updowngradeList": "remove useContext|darkViteSimpleMenu|swap useContext for Zustand|blankViteDarkMenuZustand",
+      "updowngradeList": "remove useContext|darkViteSimpleMenu;swap useContext for Zustand|blankViteDarkMenuZustand",
       "learningMaterialList": "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636",
       "todoList": ""
     },
