@@ -12,7 +12,8 @@
       "demoUrl": "",
       "updowngradeList": "add React Router menu|darkViteSimpleMenu",
       "learningMaterialList": "",
-      "todoList": ""
+      "todoList": "",
+      "hasAnimation": false
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
       "demoUrl": "",
       "updowngradeList": "remove React Router menu|darkViteSimple;add useContext|blankViteDarkMenuUsecontext;add Zustand|blankViteDarkMenuZustand",
       "learningMaterialList": "",
-      "todoList": "put Sass class names on each page;add 404 fixes for Vercel and Netlify (see useContext starter)"
+      "todoList": "put Sass class names on each page;add 404 fixes for Vercel and Netlify (see useContext starter)",
+      "hasAnimation": false
     },
     {
       "id": 3,
@@ -40,7 +42,8 @@
       "demoUrl": "https://blank-vite-dark-menu-usecontext.vercel.app",
       "updowngradeList": "remove useContext|darkViteSimpleMenu;swap useContext for Zustand|blankViteDarkMenuZustand",
       "learningMaterialList": "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636",
-      "todoList": ""
+      "todoList": "",
+      "hasAnimation": true
     },
     {
       "id": 4,
@@ -54,7 +57,8 @@
       "demoUrl": "https://blank-vite-dark-menu-zustand.vercel.app",
       "updowngradeList": "remove Zustand|darkViteSimpleMenu;swap Zustand for useContext|blankViteDarkMenuUsecontext",
       "learningMaterialList": "HOWTO: Create React site that uses Zustand as a state manager|https://edwardtanguay.vercel.app/howtos?id=601",
-      "todoList": ""
+      "todoList": "",
+      "hasAnimation": false
     },
     {
       "id": 5,
@@ -68,7 +72,8 @@
       "demoUrl": "https://getajob007.tanguay.eu",
       "updowngradeList": "",
       "learningMaterialList": "",
-      "todoList": ""
+      "todoList": "",
+      "hasAnimation": true
     }
   ]
 }

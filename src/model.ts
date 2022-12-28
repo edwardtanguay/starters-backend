@@ -130,7 +130,6 @@ export const getStarters = (): IStarter[] => {
 			...rawStarter,
 			imageUrl: `${getOnlineImageUrl(backendUrl, rawStarter.idCode)}`,
 			isFullStack: rawStarter.githubUrl2.trim() !== '',
-			animationUrl: getAnimationUrl(rawStarter),
 			readmeText: getReadmeText(rawStarter),
 			updowngradeItems: getUpdowngradeItems(rawStarter),
 			learningMaterialItems: getLearningMaterialItems(rawStarter),

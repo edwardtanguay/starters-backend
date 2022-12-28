@@ -11,13 +11,13 @@ export interface IRawStarter {
 	updowngradeList: string;
 	learningMaterialList: string;
 	todoList: string;
+	hasAnimation: boolean;
 }
 
 export interface IStarter extends IRawStarter {
 	imageUrl: string;
 	readmeText: string;
 	isFullStack: boolean;
-	animationUrl: string;
 	updowngradeItems: IUpdowngradeItem[];
 	learningMaterialItems: ILearningMaterialItem[];
 	todoItems: string[];
