@@ -70,7 +70,7 @@
 			"githubUrl2": "",
 			"installMarkdown": "## install\n\n- go to your projects directory\n  - e.g. `cd ~/projects`\n- in your projects directory, create your new site e.g. **backend001** by cloning this project \n  - `git clone git@github.com:edwardtanguay/backend-simple-readonly-json-api.git backend001`\n- open your newly created site in VSCode\n  - `code backend001`\n- inside VSCode, open the VSCode terminal\n  - **CTRL-`**\n- delete the connection to this repository by deleting the Git repository\n  - `rm -rf .git`\n- create a new local Git repository\n  - `git init -b main`\n- install node_modules\n  - `npm i`\n- start your site and click given link to view website\n  - `npm run dev`",
 			"demoUrl": "",
-			"updowngradeList": "",
+			"updowngradeList": "replace JSON data source with SQLite|sqliteReadonly",
 			"learningMaterialList": "",
 			"todoList": "",
 			"hasAnimation": false
@@ -85,10 +85,10 @@
 			"githubUrl2": "https://github.com/edwardtanguay/sqlite-readonly-backend",
 			"installMarkdown": "## install\n\n- go to your projects directory\n- create a directory with the name of your site, e.g. `site001`\n\n## install backend\n\n- go to your projects directory\n- `cd site001`\n- `git clone git@github.com:edwardtanguay/sqlite-readonly-backend.git .`\n- `npm i`\n- create **.env** file\n\n```text\nPORT = 3701\n```\n\n- `npm run dev`\n\n## install frontend\n\n- go to your projects directory\n- `cd site001`\n- `git clone git@github.com:edwardtanguay/sqlite-readonly-frontend.git .`\n- `npm i`\n- create **.env** file\n\n```text\nVITE_BACKEND_URL = http://localhost:3701\n```\n\n- `npm run dev`",
 			"demoUrl": "https://sqlite-readonly.tkserv.eu",
-			"updowngradeList": "",
+			"updowngradeList": "replace SQLite data source with JSON files|backendSimpleReadonlyJsonApi",
 			"learningMaterialList": "How to set up and use SQLite on Windows and Ubuntu|https://edwardtanguay.vercel.app/howtos?id=574",
 			"todoList": "",
-			"hasAnimation": false
+			"hasAnimation": true
 		},
 		{
 			"id": 7,
