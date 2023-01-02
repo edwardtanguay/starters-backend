@@ -108,7 +108,7 @@
 		{
 			"id": 8,
 			"idCode": "reactNodeSimpleApi",
-			"title": "React frontend with simple Node/Express backend with one route",
+			"title": "React frontend with simple Node/Express backend",
 			"description": "This is the minimal starting point for a basic React-frontend with Node/Express-backend. Frontend is Vite React with Sass, React Router, useContext and a CLI command to create pages (`npm run cp`), while the backend is a minimal Node/Express but with a simple MVC structure with server.ts which calls a function in model.ts. This is a good project if you want to build a multi-page application that has a backend that serves it data.",
 			"featureMarkdown": "- **frontend:** \n  - Vite/React \n  - Sass\n  - TypeScript\n  - ES6 modules\n  - React Router\n  - useContext\n- **backend:** \n  - Node/Express \n  - TypeScript \n  - ES6 modules\n  - simple MVC Structure (`server.ts`/`model.ts`)",
 			"githubUrl": "https://github.com/edwardtanguay/react-node-simple-api-frontend",
