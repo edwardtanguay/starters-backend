@@ -96,14 +96,14 @@
 			"title": "Frontend/Backend MERN CRUD app with Lowdb and PIN authentication",
 			"description": "This is a fullstack MERN frontend/backend example app which has all the moving parts for you to deploy an application online to e.g. Hetzner which allows users who know the admin PIN to edit, delete and add new items online. This is a good basis to study, learn and use if you have React/Node/Express skills but not yet database or auth security skills. It has everything you need to publish an online website in which users can identify themselves and change content online. Note that if you want to build a job-application management app, this is a useful basis which can be used as is. Otherwise you will have to replace the content with your own.",
 			"featureMarkdown": "- Node/Express API\n- TypeScript\n  - two interfaces: `IRawBooks`, `IBooks`\n- ES6 modules\n- three simple routes:\n  - `/` - API instructions\n  - `/books` - all books\n  - `/books/3` - book with id 3\n- simple MVC structure\n  - `server.ts` - responsible for req/res routes\n  - `model.ts` - responsible for data functions\n- simple example of custom middleware (logger)\n- `config.ts` has centralized data \n- `test.rest` used for manual testing (need [REST Client VSCode extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client))\n- cors implemented",
-			"githubUrl": "https://github.com/edwardtanguay/react-node-simple-api-frontend",
-			"githubUrl2": "https://github.com/edwardtanguay/react-node-simple-api-backend",
+			"githubUrl": "https://github.com/edwardtanguay/getajob007-frontend",
+			"githubUrl2": "https://github.com/edwardtanguay/getajob007-backend",
 			"installMarkdown": "## install\n\n- go to your projects directory\n  - e.g. `cd ~/projects`\n- in your projects directory, create your new site e.g. **backend001** by cloning this project \n  - `git clone git@github.com:edwardtanguay/backend-simple-readonly-json-api.git backend001`\n- open your newly created site in VSCode\n  - `code backend001`\n- inside VSCode, open the VSCode terminal\n  - **CTRL-`**\n- delete the connection to this repository by deleting the Git repository\n  - `rm -rf .git`\n- create a new local Git repository\n  - `git init -b main`\n- install node_modules\n  - `npm i`\n- start your site and click given link to view website\n  - `npm run dev`",
-			"demoUrl": "",
+			"demoUrl": "https://getajob007.tanguay.eu",
 			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
-			"hasAnimation": false
+			"hasAnimation": true
 		},
 		{
 			"id": 8,
@@ -111,14 +111,14 @@
 			"title": "React frontend with simple Node/Express backend with one route",
 			"description": "This is the minimal starting point for a basic React-frontend with Node/Express-backend. Frontend is Vite React with Sass, React Router, useContext and a CLI command to create pages (`npm run cp`), while the backend is a minimal Node/Express but with a simple MVC structure with server.ts which calls a function in model.ts. This is a good project if you want to build a multi-page application that has a backend that serves it data.",
 			"featureMarkdown": "- **frontend:** Vite/React with Sass, TypeScript and ES6 modules\n- **backend:** Node/Express with TypeScript and ES6 modules\n- **database:** [Lowdb](https://www.npmjs.com/package/lowdb) (one JSON file in backend)\n- **authentication:** simple PIN which is an environment variable in the backend, i.e. all POST/PATCH/DELETE backend routes are protected\n- **toastify notifications**: easy-to-implement app messages that pop out with animation in e.g. upper-right-hand corner, see [react-toastify](https://www.npmjs.com/package/react-toastify)",
-			"githubUrl": "https://github.com/edwardtanguay/getajob007-frontend",
-			"githubUrl2": "https://github.com/edwardtanguay/getajob007-backend",
+			"githubUrl": "https://github.com/edwardtanguay/react-node-simple-api-frontend",
+			"githubUrl2": "https://github.com/edwardtanguay/react-node-simple-api-backend",
 			"installMarkdown": "## install\n\n- go to your projects directory\n- create a directory called `getajob`\n\n## install backend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-backend.git`\n- `npm i`\n- create **.env** file\n\n```text\nPORT = 3001\nPIN = 1234\n```\n\n- `npm run dev`\n\n## install frontend\n\n- go to your projects directory\n- `cd getajob`\n- `git clone git@github.com:edwardtanguay/getajob007-frontend.git`\n- `npm i`\n- create **.env** file\n\n```text\nVITE_BACKEND_URL = http://localhost:3001\n```\n\n- `npm run dev`",
-			"demoUrl": "https://getajob007.tanguay.eu",
+			"demoUrl": "",
 			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
-			"hasAnimation": true
+			"hasAnimation": false
 		}
 	]
 }
