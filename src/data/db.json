@@ -4,7 +4,7 @@
 			"id": 1,
 			"idCode": "darkViteSimple",
 			"title": "Simple React Site",
-			"description": "This is a simple one-page React site created with Vite that has Typescript and Sass installed.",
+			"description": "This is a simple one-page React site created with Vite that has Typescript and Sass already installed.",
 			"featureMarkdown": "- built with **Vite**\n- **one-page** without any menu\n- dark layout\n- TypeScript\n- one **Sass** file (`index.css` is deleted)\n- *good for simple sites and basic React howto examples*",
 			"githubUrl": "https://github.com/edwardtanguay/blank-vite-dark",
 			"githubUrl2": "",
