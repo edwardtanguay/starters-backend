@@ -115,7 +115,7 @@
 			"githubUrl2": "https://github.com/edwardtanguay/react-node-simple-api-backend",
 			"installMarkdown": "## install\n\n- go to your projects directory\n- create a directory called `site001`\n\n## install backend\n\n- go to your projects directory\n- `cd site001`\n- `git clone git@github.com:edwardtanguay/react-node-simple-api-backend.git site001-backend`\n- `npm i`\n- `npm run dev`\n\n## install frontend\n\n- go to your projects directory\n- `cd site001`\n- `git clone git@github.com:edwardtanguay/react-node-simple-api-frontend.git site001-frontend`\n- `npm i`\n- `npm run dev`",
 			"demoUrl": "",
-			"updowngradeList": "add authentication|reactNodeSimpleApi",
+			"updowngradeList": "add authentication|reactNodeSimpleAdminAuth",
 			"learningMaterialList": "",
 			"todoList": "",
 			"hasAnimation": false
