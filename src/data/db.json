@@ -133,7 +133,7 @@
 			"updowngradeList": "remove authentication|reactNodeSimpleApi",
 			"learningMaterialList": "",
 			"todoList": "",
-			"hasAnimation": false
+			"hasAnimation": true
 		}
 	]
 }
