@@ -145,10 +145,10 @@
 			"githubUrl2": "https://github.com/edwardtanguay/fullstack-react-sqlite-crud-backend",
 			"installMarkdown": "## install\n\n- open your terminal\n- create a directory for this project, e.g.\n\t- `mkdir site001`\n\n## install backend\n\n- enter your project directory\n\t- `cd site001`\n- create backend directory\n\t- `git clone git@github.com:edwardtanguay/react-node-simple-admin-auth-backend.git site001-backend`\n- open VSCode in the backend directory\n\t- `code site001-backend`\n- open VSCode terminal\n- delete old and create new Git repository\n\t- `rm -rf .git`\n\t- `git npm -b main`\n\t- make initial commit\n- create `.env` file with **any random characters** for the session secret, and an **admin password** you can remember\n\t----------------------------\n\tSESSION_SECRET = ksks2374skjdf\n\tADMIN_PASSWORD = pass828\n\t----------------------------\n- install node_modules\n\t- `npm i`\n- start the backend\n\t- `npm run dev`\n- open API in browser\n\t- click url in terminal\n- to distinguish your backend VSCode from your frontend VSCode, set VSCode frame to \"**b**lue for **b**ackend)\n\t- you need the [VSCode Peacock extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)\n\t- **F1**\n\t- \"Peacock: Enter a Color\"\n\t- `navy`\n\n## install frontend\n\n- enter your project directory\n\t- `cd site001`\n- create frontend directory\n\t- `git clone git@github.com:edwardtanguay/react-node-simple-admin-auth-frontend.git site001-frontend`\n- open VSCode in the frontend directory\n\t- `code site001-frontend`\n- open VSCode terminal\n- delete old and create new Git repository\n\t- `rm -rf .git`\n\t- `git npm -b main`\n\t- make initial commit\n- no `.env` file is necessary for the frontend\n- install node_modules\n\t- `npm i`\n- start the backend\n\t- `npm run dev`\n- open in browser\n\t- click url in terminal\n- to distinguish your backend VSCode from your backend VSCode, set VSCode frame to \"**f**uchsia for **f**rontend)\n\t- you need the [VSCode Peacock extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)\n\t- **F1**\n\t- \"Peacock: Enter a Color\"\n\t- `purple`",
 			"demoUrl": "",
-			"updowngradeList": "remove authentication|reactNodeSimpleApi",
+			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
-			"hasAnimation": true
+			"hasAnimation": false
 		}
 	]
 }
