@@ -19,3 +19,4 @@ BACKEND_URL = http://localhost:3502
 
 
 - test 001
+- test 002
