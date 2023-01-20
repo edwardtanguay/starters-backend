@@ -153,7 +153,7 @@
 		{
 			"id": 11,
 			"idCode": "mernMongooseBookCrudFrontend",
-			"title": "Fullstack MERN site with separate which allows the user to add/edit/delete items in backend CRUD API using MongoDB and TypeScript/ES6-Modules on frontend/backend",
+			"title": "Fullstack MERN site which allows user to add/edit/delete items in CRUD API using MongoDB and TypeScript/ES6-Modules on frontend/backend",
 			"description": "This starter is not only a good way to learn the basic skills of building a full-stack MERN site with admin login and item editing, but you can also use this site as a basis to create sites where you can log in as admin, edit/delete/add items and then log out again. Since it uses React, this is ideal for making an app-like site on your smart phone that you log into on the go to change and add information. There is only one user (admin), the password is saved in text in the backend .env file. In this way, the app is simplified for learning purposes but this site could be used for a wide range of personal or company and sites that need to have an admin keep the site up-to-date with new information.",
 			"featureMarkdown": "- **frontend:** \n\t- Vite/React\n\t- Sass\n\t- TypeScript / ES6 modules\n\t- React Router\n\t- useContext\n\t- admin login with password\n\t- react-helmet\n\t- axios \n\n- **backend:** \n\t- Node/Express \n\t- TypeScript / ES6 modules\n\t- simple MVC structure (`server.ts`/`model.ts`)\n\t- cookie/session authentication\n\t- MongoDB (local or Atlas)\n\t- Mongoose",
 			"githubUrl": "https://github.com/edwardtanguay/et-mern-crud-site-frontend",
