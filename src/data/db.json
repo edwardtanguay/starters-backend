@@ -13,6 +13,7 @@
 			"updowngradeList": "add React Router menu|darkViteSimpleMenu",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": false
 		},
 		{
@@ -28,6 +29,7 @@
 			"updowngradeList": "remove React Router menu|darkViteSimple;add useContext|blankViteDarkMenuUsecontext;add Zustand|blankViteDarkMenuZustand",
 			"learningMaterialList": "",
 			"todoList": "put Sass class names on each page;add 404 fixes for Vercel and Netlify (see useContext starter)",
+			"externalForkList": "",
 			"hasAnimation": false
 		},
 		{
@@ -43,6 +45,7 @@
 			"updowngradeList": "remove useContext|darkViteSimpleMenu;swap useContext for Zustand|blankViteDarkMenuZustand",
 			"learningMaterialList": "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": true
 		},
 		{
@@ -58,6 +61,7 @@
 			"updowngradeList": "remove Zustand|darkViteSimpleMenu;swap Zustand for useContext|blankViteDarkMenuUsecontext",
 			"learningMaterialList": "HOWTO: Create React site that uses Zustand as a state manager|https://edwardtanguay.vercel.app/howtos?id=601",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": false
 		},
 		{
@@ -73,6 +77,7 @@
 			"updowngradeList": "replace JSON data source with SQLite|sqliteReadonly",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": false
 		},
 		{
@@ -88,6 +93,7 @@
 			"updowngradeList": "replace SQLite data source with JSON files|backendSimpleReadonlyJsonApi",
 			"learningMaterialList": "HOWTO: How to set up and use SQLite on Windows and Ubuntu|https://edwardtanguay.vercel.app/howtos?id=575;HOWTO: How to install DB Browser for SQLite on Windows and Ubuntu and retrieve/change data in an SQLite database|https://edwardtanguay.vercel.app/howtos?id=574",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": true
 		},
 		{
@@ -103,6 +109,7 @@
 			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": true
 		},
 		{
@@ -118,6 +125,7 @@
 			"updowngradeList": "add authentication|reactNodeSimpleAdminAuth",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": false
 		},
 		{
@@ -133,6 +141,7 @@
 			"updowngradeList": "remove authentication|reactNodeSimpleApi",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": true
 		},
 		{
@@ -148,6 +157,7 @@
 			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "",
 			"hasAnimation": true
 		},
 		{
@@ -163,6 +173,7 @@
 			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
+			"externalForkList": "Add bcrypt and cryptr to protect admin and MongoDB passwords|https://github.com/edwardtanguay/merncrud022-backend",
 			"hasAnimation": true
 		}
 	]

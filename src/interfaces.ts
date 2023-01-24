@@ -10,6 +10,7 @@ export interface IRawStarter {
 	demoUrl: string;
 	updowngradeList: string;
 	learningMaterialList: string;
+	externalForkList: string;
 	todoList: string;
 	hasAnimation: boolean;
 }
@@ -20,6 +21,7 @@ export interface IStarter extends IRawStarter {
 	isFullStack: boolean;
 	updowngradeItems: IUpdowngradeItem[];
 	learningMaterialItems: ILearningMaterialItem[];
+	externalForkItems: IExternalForkItem[];
 	todoItems: string[];
 }
 
@@ -29,6 +31,11 @@ export interface IUpdowngradeItem {
 };
 
 export interface ILearningMaterialItem {
+	title: string;
+	url: string;
+}
+
+export interface IExternalForkItem {
 	title: string;
 	url: string;
 }

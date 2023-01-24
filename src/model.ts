@@ -1,4 +1,4 @@
-import { IStarter, IRawStarter, IUpdowngradeItem, ILearningMaterialItem } from './interfaces.js';
+import { IStarter, IRawStarter, IUpdowngradeItem, ILearningMaterialItem, IExternalForkItem } from './interfaces.js';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { Low } from 'lowdb';
@@ -100,13 +100,32 @@ const getLearningMaterialItems = (rawStarter: IRawStarter) => {
 		const itemLines = rawStarter.learningMaterialList.split(';').map(m => m.trim());
 		itemLines.forEach(itemLine => {
 			const parts = itemLine.split('|').map(m => m.trim());
-			const learningMaterialItem: ILearningMaterialItem = {
+			const learningMaterialItem: IExternalForkItem = {
 				title: parts[0],
 				url: parts[1]
 			}
 			learningMaterialItems.push(learningMaterialItem);
 		});
 		return learningMaterialItems;
+	} else {
+		return [];
+	}
+}
+
+const getExternalForkItems = (rawStarter: IRawStarter) => {
+	if (rawStarter.externalForkList.trim() !== '') {
+		const externalForkItems: IExternalForkItem[] = [];
+		// "externalForkList": "Add bcrypt and cryptr to protect admin and MongoDB passwords|https://github.com/edwardtanguay/merncrud022-backend",
+		const itemLines = rawStarter.externalForkList.split(';').map(m => m.trim());
+		itemLines.forEach(itemLine => {
+			const parts = itemLine.split('|').map(m => m.trim());
+			const externalForkItem: IExternalForkItem = {
+				title: parts[0],
+				url: parts[1]
+			}
+			externalForkItems.push(externalForkItem);
+		});
+		return externalForkItems;
 	} else {
 		return [];
 	}
@@ -133,7 +152,8 @@ export const getStarters = (): IStarter[] => {
 			readmeText: getReadmeText(rawStarter),
 			updowngradeItems: getUpdowngradeItems(rawStarter),
 			learningMaterialItems: getLearningMaterialItems(rawStarter),
-			todoItems: getTodoItems(rawStarter)
+			todoItems: getTodoItems(rawStarter),
+			externalForkItems: getExternalForkItems(rawStarter)
 		};
 		_starters.push(_starter);
 	})
