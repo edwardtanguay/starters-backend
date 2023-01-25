@@ -173,7 +173,7 @@
 			"updowngradeList": "",
 			"learningMaterialList": "",
 			"todoList": "",
-			"externalForkList": "Add bcrypt and cryptr to protect admin and MongoDB passwords|https://github.com/edwardtanguay/merncrud022-backend",
+			"externalForkList": "Add bcrypt and cryptr to protect admin and MongoDB passwords|https://github.com/edwardtanguay/merncrud022-backend; replace admin login with multiuser login|https://github.com/edwardtanguay/merncrud031-backend",
 			"hasAnimation": true
 		}
 	]
