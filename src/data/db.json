@@ -189,7 +189,7 @@
 			"updowngradeList": "switch to admin login only|mernMongooseBookCrudFullstack",
 			"learningMaterialList": "",
 			"todoList": "",
-			"externalForkList": "replace session/cookies with JWT - backend|https://github.com/edwardtanguay/jwt223-backend; replace session/cookies with JWT - frontend|https://github.com/edwardtanguay/jwt223-frontend",
+			"externalForkList": "replace session/cookies with JWT - backend|https://github.com/edwardtanguay/jwt224-backend; replace session/cookies with JWT - frontend|https://github.com/edwardtanguay/jwt224-frontend",
 			"hasAnimation": true
 		}
 	]
