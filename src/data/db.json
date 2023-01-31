@@ -45,7 +45,7 @@
 			"updowngradeList": "remove useContext|darkViteSimpleMenu;swap useContext for Zustand|blankViteDarkMenuZustand",
 			"learningMaterialList": "HOWTO: Implement useContext in an app with multiple pages and data sources|https://edwardtanguay.vercel.app/howtos?id=636",
 			"todoList": "",
-			"externalForkList": "",
+			"externalForkList": "add ability to upload files to a backend and display (upload004-backend)|https://github.com/edwardtanguay/upload004-backend;add ability to upload files to a backend and display (upload004-frontend)|https://github.com/edwardtanguay/upload004-frontend",
 			"hasAnimation": true
 		},
 		{
