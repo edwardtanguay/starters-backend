@@ -17,7 +17,7 @@ a, h1 {
 	font-family: courier;
 }
 </style>
-<h1>STARTERS BACKEND/API</h1>	
+<h1>STARTERS API</h1>	
 <ul>
 	<li><a href="starters">/starters</a> - array of starter sites</li>
 </ul>
