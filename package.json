@@ -8,8 +8,8 @@
 		"dev": "npm run build && nodemon",
 		"build": "tsc --build",
 		"start": "node dist/server.js",
-		"setup": "npm i && pm2 start --name starters-backend npm -- start",
-		"deploy": "git pull --no-rebase && pm2 restart starters-backend --update-env --time && pm2 save"
+		"setup": "npm i && npm build && pm2 start --name starters-backend npm -- start",
+		"deploy": "git pull --no-rebase && npm i && git npm build && pm2 restart starters-backend --update-env --time && pm2 save"
 	},
 	"nodemonConfig": {
 		"watch": [
