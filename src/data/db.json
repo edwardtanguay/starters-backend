@@ -228,17 +228,33 @@
 			"id": 15,
 			"idCode": "darkViteVanilla",
 			"title": "Simple Vite Vanilla Site",
-			"description": "This is a simple one-page HTML/CSS/JavaScript site created with Vite Vanilla that has Typescript and Sass already installed.",
-			"featureMarkdown": "- built with **Vite**\n- **one-page** without any menu\n- dark layout\n- TypeScript\n- one **Sass** file\n- *good for developers with HTML/CSS/JavaScript or merely HTML/CSS skills who want to make one-page sites with a modern React-like framework that with e.g. npm packages which can easily publish at Vercel, etc.* ",
+			"description": "This is a simple one-page HTML/CSS/JavaScript site created with Vite Vanilla option. It has Typescript and Sass already installed.",
+			"featureMarkdown": "- built with **Vite** (Vanilla/TypeScript)\n- **one-page** without any menu\n- dark layout\n- TypeScript\n- one **Sass** file\n- *good for developers with HTML/CSS/JavaScript or merely HTML/CSS skills who want to make one-page sites with a modern React-like framework that has npm packages, can load JSON files from the file system, and you can easily publish at Vercel, etc.* ",
 			"githubUrl": "https://github.com/edwardtanguay/vite-vanilla-dark",
 			"githubUrl2": "",
 			"installMarkdown": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
-			"demoUrl": "https://vite-vanilla-menu.vercel.app",
+			"demoUrl": "",
 			"updowngradeList": "add menu|darkViteVanillaMenu",
 			"learningMaterialList": "",
 			"todoList": "",
 			"externalForkList": "",
 			"hasAnimation": false
+		},
+		{
+			"id": 15,
+			"idCode": "darkViteVanillaMenu",
+			"title": "Vite Vanilla Site with Menu",
+			"description": "This is a multi-page HTML/CSS/JavaScript site created with Vite Vanilla option. It has Typescript and Sass already installed. I created a simple Router which makes it possible to add pages easily (a few changes in `Router.ts` and then add e.g. `pages/PageReports.ts` which looks similar to a React component.",
+			"featureMarkdown": "- built with **Vite** (Vanilla/TypeScript)\n- **multi-page** menu, editable in `Router.ts`\n- dark layout\n- TypeScript\n- one **Sass** file\n- *good for developers who don't yet have React skills but who want to make multi-page sites with a modern React-like framework that has npm packages, can load JSON files from the file system, and you can easily publish at Vercel, etc.*",
+			"githubUrl": "https://github.com/edwardtanguay/vite-vanilla-menu",
+			"githubUrl2": "",
+			"installMarkdown": "## install\n\n- download zip\n- copy all files to new directory, e.g. `/home/yourname/projects/site001`\n- open VSCode in that directory (`code .`)\n- `npm i`\n- `npm run dev`",
+			"demoUrl": "https://vite-vanilla-menu.vercel.app",
+			"updowngradeList": "remove menu|darkViteVanilla",
+			"learningMaterialList": "",
+			"todoList": "",
+			"externalForkList": "",
+			"hasAnimation": true
 		}
 	]
 }
